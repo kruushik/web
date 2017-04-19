@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fish">
+        <h3>korop</h3>
+        <img src="okyn-small.png" alt="">
+    </div>
+    <div class="fish">
+        <h3>karas</h3>
+        <img src="okyn-smal.png" alt="">
+    </div>
+    <div class="fish">
+        <h3>okyn</h3>
+        <img src="okyn-smal.png" alt="">
+    </div>
+
+    <script>
+        var fishs = document.querySelectorAll(".fish");
+        for (var i = 0; i < fishs.length; i++) {
+            var fish = fishs[i];
+            var s = fish.children;
+            var h3 = s[0];
+            var h3Text = h3.innerText;
+            var img = s[0];
+            img.setAttribute('alt', h3Text);
+        }
+    </script>
+    <script>
+
+        var box = document.createElement('box');
+        box.setAttribute('class', 'wrasp');
+        var s = document.createElement('s');
+        s.setAttribute('src', 'lips.jpg');
+        box.appendChild(s);
+        document.body.appendChild(box);
+
+    </script>
+
+
+</body>
+</html>

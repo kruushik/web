@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+header{
+    background-image: url(fon-top-3.jpg);
+/*    padding: 15% 0;*/
+    text-align: center;
+    color: red;
+    text-shadow: 1px 2px black;
+    height: 100px
+}

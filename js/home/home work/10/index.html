@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link href="bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <script>
+      var div = document.createElement('div');
+      div.style.background = "black";
+      div.style.margin = "0 auto";
+      div.style.width = "80%";
+      div.setAttribute('class', 'oko');
+      var img = document.createElement('img');
+      img.setAttribute('src', 'klichko.jpg');
+      img.style.marginLeft = "40%";
+      div.appendChild(img);
+      var p = document.createElement('p');
+      p.innerHTML = "<p>asdhgajsbx asgdahsbdasb ,asghdkasbxjh</p>";
+      p.style.textAlign = "center";
+      p.style.color = "white";
+      p.style.fontSize = "25px";
+      p.style.marginTop= "25px";
+      div.appendChild(p);
+      var ul = document.createElement('ul');
+      var li = document.createElement('li');
+      var text = document.createElement('text');
+      text.innerText = "hello!!!";
+      text.style.color = "red";
+      li.appendChild(text);
+      li.style.marginLeft = "150px";
+      var li2 = document.createElement('li');
+      li2.style.marginLeft = "150px";
+      var text2 = document.createElement('text2');
+      text2.innerText = "hello!!!";
+      text2.style.color = "yellow";
+      li2.appendChild(text2);
+      var li3 = document.createElement('li');
+      var text3 = document.createElement('text3');
+      text3.innerText = "hello!!!";
+      text3.style.color = "orange";
+      li3.appendChild(text3);
+      ul.appendChild(li);
+      ul.appendChild(li2);
+      ul.appendChild(li3);
+      div.appendChild(ul);
+      document.body.appendChild(div);
+  </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="main.js"></script>  
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11 home</title>
+</head>
+<body>
+<ul>
+    <li>wordpress</li>
+    <li>joomla</li>
+    <li>drupal</li>
+</ul>
+
+<script>
+    var lis = document.getElementsByTagName('li');
+    console.log(lis);
+    var tempArr = [];
+    for (var i = 0; i < lis.length; i++) {
+        tempArr.push(lis[i]);
+    }
+    var r = tempArr.findIndex(function (e, i, a) {
+        return e.innerText == 'wordpress';
+    })
+    console.log(tempArr);
+    console.log(r);
+
+    var mas = [12, 51, 65, 95, 19, 66];
+    // add new element to the end of array
+    console.log(mas.push(100));
+    console.log(mas);
+    // remove last element
+    console.log(mas.pop());
+    console.log(mas);
+    //remove first element
+    console.log(mas.shift());
+    console.log(mas);
+    //add element to begin of array
+    console.log(mas.unshift('hello'));
+    console.log(mas);
+    console.log(mas.splice(1, 2, 'yes', 'no'));
+    console.log(mas);
+    var newMas = mas.slice(2, 5);
+    console.log(newMas);
+
+
+    var arr = [12, 1, 55, 46, 87, 35, 'hello'];
+    arr.forEach(function (elem, index, mass) {
+        
+    });
+    console.log(arr);
+    var res = arr.every(function (e, i, a) {
+        return typeof e == 'number';
+    })
+    console.log(res);
+    var res2 = arr.some(function (e, i, a) {
+        return typeof e == 'string'
+    })
+    console.log(res2);
+    var res3 = arr.find(function (e, i, a) {
+        if (e % 5 === 0){
+            return e;
+        }
+    })
+    console.log(res3);
+    var res4 = arr.findIndex(function (e, i, a) {
+        return e % 2 == 0;
+    })
+    console.log(res4);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

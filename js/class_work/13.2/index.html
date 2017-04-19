@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .yyy{
+            color: red;
+        }
+
+
+
+
+
+        .submenu li{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button id="btn">om mouse over</button>
+
+<div class="xxx">ee</div>
+<div class="xxx">rr</div>
+<div class="xxx">tt</div>
+
+
+<ul class = "menu">
+    <li>111</li>
+    <li>222
+        <ul class = "submenu">
+            <li>2211</li>
+            <li>2222</li>
+            <li>2233</li>
+        </ul>
+    </li>
+    <li>333</li>
+</ul>
+
+
+<script>
+
+    var li2 = document.querySelector(".menu>li:nth-child(2)");
+    li2.onclick = function () {
+        var ulSubMenu = li2.children[0];
+        ulSubMenu.className = "newClass";
+    }
+
+
+
+    var button = document.getElementById("btn");
+    button.onmouseover = function () {
+        var elems = document.getElementsByTagName("div");
+        for (var i = 0; i < elems.length; i++) {
+            var elem = elems[i];
+            elem.className = "yyy";
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
